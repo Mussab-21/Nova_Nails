@@ -1,0 +1,3057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NOVA NAILS – Big Ideas. Bold Nails. Bigger Dreams.</title>
+<meta name="description" content="NOVA NAILS: Founded by young entrepreneurs Abdullah (Administration Director) and Ayesha (Director of Operation and Development). Handcrafted salon-grade press-on nail artistry. Follow @nova_nails_26 on Instagram and DM for custom orders!">
+<meta name="theme-color" content="#FF4FA3">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:title" content="NOVA NAILS – Dream, Create, Shine">
+<meta property="og:description" content="Founded by young entrepreneurs Abdullah and Ayesha. Handcrafted press-on nails. Follow @nova_nails_26 on Instagram & DM to order!">
+<meta property="og:image" content="./images/nova_nails_logo.png">
+<meta property="og:type" content="website">
+
+<!-- Favicon (SVG Sparkle & Nail Gem) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='10' fill='%235940D8'/><path fill='%23FFE66D' d='M16 4l2.5 7.5L26 14l-7.5 2.5L16 24l-2.5-7.5L6 14l7.5-2.5z'/><circle cx='23' cy='23' r='4' fill='%23FF4FA3'/></svg>">
+
+<!-- Google Fonts: Bricolage Grotesque & DM Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================================
+   NOVA NAILS DESIGN SYSTEM (Direction A — Pop Entrepreneur)
+   Optimized for compact, energetic spacing & high contrast
+   ========================================================================== */
+:root {
+  --pink: #FF4FA3;
+  --purple: #5940D8;
+  --purple-light: #7761F0;
+  --lemon: #FFE66D;
+  --mint: #77E5D2;
+  --coral: #FF765E;
+  --ink: #241B2F;
+  --bg: #FFF9F4;
+  --card: #FFFFFF;
+  --soft: #FFEAF3;
+  --soft-purple: #F0EDFE;
+  --soft-mint: #E8FAF6;
+  --soft-lemon: #FFFBE6;
+  --border: #241B2F;
+  --border-width: 2.5px;
+  --shadow-pop: 5px 6px 0 var(--border);
+  --shadow-pop-sm: 3px 4px 0 var(--border);
+  --shadow-pop-lg: 7px 9px 0 var(--border);
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+
+  --h: 'Bricolage Grotesque', -apple-system, system-ui, sans-serif;
+  --b: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Dark Mode with High-Contrast Luminous Pop Styling */
+:root[data-theme="dark"] {
+  --ink: #FFF5EE;
+  --bg: #161020;
+  --card: #221830;
+  --soft: #2D1D3F;
+  --soft-purple: #251B3B;
+  --soft-mint: #152E2A;
+  --soft-lemon: #332A12;
+  --border: #FFF5EE;
+  --shadow-pop: 5px 6px 0 #FF4FA3;
+  --shadow-pop-sm: 3px 4px 0 #77E5D2;
+  --shadow-pop-lg: 7px 9px 0 #5940D8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #FFF5EE;
+    --bg: #161020;
+    --card: #221830;
+    --soft: #2D1D3F;
+    --soft-purple: #251B3B;
+    --soft-mint: #152E2A;
+    --soft-lemon: #332A12;
+    --border: #FFF5EE;
+    --shadow-pop: 5px 6px 0 #FF4FA3;
+    --shadow-pop-sm: 3px 4px 0 #77E5D2;
+    --shadow-pop-lg: 7px 9px 0 #5940D8;
+  }
+}
+
+/* Global Reset & Spacing Optimization */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--b);
+  line-height: 1.55;
+  font-size: 16.5px;
+  overflow-x: hidden;
+  position: relative;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border: 2px solid var(--bg);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink);
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--h);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:focus-visible {
+  outline: 3px solid var(--pink);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Compact Balanced Section Spacing */
+section {
+  padding: 50px 0;
+  position: relative;
+}
+
+/* ==========================================================================
+   BUTTONS, BADGES & INTERACTION TOKENS
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--h);
+  font-weight: 700;
+  font-size: 15.5px;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  background: var(--purple);
+  color: #FFFFFF;
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop);
+  cursor: pointer;
+  transition: transform .2s cubic-bezier(.2,1.3,.4,1), box-shadow .2s ease, background-color .2s;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translate(-2px, -3px) rotate(-1deg);
+  box-shadow: 6px 8px 0 var(--pink);
+  background: var(--purple-light);
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--border);
+}
+
+.btn-pink {
+  background: var(--pink);
+  color: #FFFFFF;
+}
+.btn-pink:hover {
+  background: #ff3396;
+  box-shadow: 6px 8px 0 var(--purple);
+}
+
+.btn-lemon {
+  background: var(--lemon);
+  color: #161020;
+}
+.btn-lemon:hover {
+  background: #ffe04d;
+  box-shadow: 6px 8px 0 var(--pink);
+}
+
+.btn-ghost {
+  background: var(--card);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  background: var(--soft);
+  box-shadow: 6px 8px 0 var(--mint);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 13.5px;
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--lemon);
+  color: #161020;
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  transform: rotate(-1.5deg);
+}
+
+.badge-tag.pink {
+  background: var(--pink);
+  color: #FFFFFF;
+  transform: rotate(1.5deg);
+}
+
+.badge-tag.mint {
+  background: var(--mint);
+  color: #161020;
+}
+
+.badge-tag.purple {
+  background: var(--purple);
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 2px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  transition: all .25s ease;
+}
+
+header.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #FFF;
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 var(--pink);
+  transition: transform .25s ease;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.brand-logo-text {
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-logo-text span {
+  color: var(--pink);
+  display: inline-block;
+}
+
+.brand-logo-tagline {
+  font-family: var(--b);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 3px;
+  opacity: .85;
+}
+
+nav.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+  background: color-mix(in srgb, var(--soft) 50%, var(--card));
+  padding: 5px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--border);
+}
+
+nav.main-nav ul a {
+  display: block;
+  font-family: var(--h);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: var(--radius-full);
+  color: var(--ink);
+  transition: all .2s ease;
+}
+
+nav.main-nav ul a:hover,
+nav.main-nav ul a.active {
+  background: var(--purple);
+  color: #FFF;
+  transform: translateY(-1px);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--ink);
+  transition: transform .2s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg) scale(1.08);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: var(--card);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 20px;
+  height: 2.5px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: .3s;
+}
+
+/* Mobile Nav Overlay */
+.mobile-drawer {
+  display: none;
+  position: fixed;
+  top: 68px;
+  left: 0;
+  right: 0;
+  background: var(--card);
+  border-bottom: 3px solid var(--border);
+  padding: 20px;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+  z-index: 99;
+  flex-direction: column;
+  gap: 12px;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .3s cubic-bezier(.2,1,.3,1), opacity .3s;
+}
+
+.mobile-drawer.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-drawer a {
+  font-family: var(--h);
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  display: block;
+  border: 2px solid transparent;
+}
+
+.mobile-drawer a:hover {
+  background: var(--soft);
+  border-color: var(--border);
+}
+
+/* ==========================================================================
+   HERO SECTION (COMPACT & PUNCHY)
+   ========================================================================== */
+.hero {
+  padding: 36px 0 44px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: clamp(38px, 5.8vw, 76px);
+  line-height: 1.03;
+  margin: 14px 0 16px;
+  letter-spacing: -0.03em;
+}
+
+.hero-title .word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(24px) rotate(2deg);
+  animation: popInWord .6s cubic-bezier(.16, 1.3, .3, 1) forwards;
+}
+
+@keyframes popInWord {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-title .highlight-pink {
+  color: var(--pink);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-title .highlight-pink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 12px;
+  background: var(--lemon);
+  z-index: -1;
+  border-radius: 4px;
+  transform: rotate(-1.5deg);
+}
+
+.hero-title .highlight-purple {
+  color: var(--purple);
+}
+
+.hero-lead {
+  font-size: 18.5px;
+  line-height: 1.55;
+  max-width: 520px;
+  margin-bottom: 24px;
+  color: var(--ink);
+  opacity: .95;
+}
+
+.hero-lead strong {
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* High Contrast Stat Chips */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.stat-chip {
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.stat-chip.chip-lemon {
+  background: var(--lemon);
+  color: #161020 !important;
+}
+
+.stat-chip.chip-mint {
+  background: var(--mint);
+  color: #161020 !important;
+}
+
+.stat-chip.chip-pink {
+  background: var(--pink);
+  color: #FFFFFF !important;
+}
+
+.stat-chip:hover {
+  transform: translateY(-3px) rotate(1deg);
+  box-shadow: var(--shadow-pop);
+}
+
+.stat-chip b {
+  display: block;
+  font-family: var(--h);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 2px;
+}
+
+.stat-chip span {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  display: block;
+}
+
+/* Hero Stage / Visual */
+.hero-stage-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-stage {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1 / 1.05;
+  background: linear-gradient(135deg, var(--soft) 0%, var(--soft-purple) 100%);
+  border-radius: var(--radius-lg);
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.hero-logo-showcase {
+  position: relative;
+  width: 82%;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  background: #FFFFFF;
+  border: var(--border-width) solid var(--border);
+  box-shadow: 6px 7px 0 var(--pink);
+  transform: rotate(-2.5deg);
+  transition: transform .3s ease, box-shadow .3s ease;
+  z-index: 5;
+}
+
+.hero-logo-showcase:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 7px 9px 0 var(--purple);
+}
+
+.hero-logo-showcase img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.06));
+}
+
+.hero-logo-badge {
+  position: absolute;
+  bottom: -12px;
+  right: -8px;
+  background: var(--lemon);
+  color: #161020;
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 var(--border);
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 12px;
+  transform: rotate(3deg);
+}
+
+/* Floating Stickers on Hero */
+.floating-sticker {
+  position: absolute;
+  z-index: 6;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 12px;
+  white-space: nowrap;
+  animation: floatSlight 6s ease-in-out infinite alternate;
+}
+
+.floating-sticker.top-left {
+  top: 5%;
+  left: 4%;
+  background: var(--mint);
+  color: #161020;
+  transform: rotate(-6deg);
+  animation-delay: -1s;
+}
+
+.floating-sticker.bottom-left {
+  bottom: 6%;
+  left: 5%;
+  background: var(--lemon);
+  color: #161020;
+  transform: rotate(5deg);
+  animation-delay: -3s;
+}
+
+.floating-sticker.top-right {
+  top: 8%;
+  right: 4%;
+  background: var(--pink);
+  color: #FFF;
+  transform: rotate(7deg);
+  animation-delay: -2s;
+}
+
+@keyframes floatSlight {
+  0% { transform: translateY(0) rotate(-5deg); }
+  100% { transform: translateY(-10px) rotate(2deg); }
+}
+
+/* Animated Sparkles */
+.sparkle-icon {
+  position: absolute;
+  z-index: 4;
+  animation: sparkleSpin 12s linear infinite;
+}
+
+@keyframes sparkleSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   MARQUEE TICKER TAPE
+   ========================================================================== */
+.ticker-wrapper {
+  position: relative;
+  padding: 12px 0;
+  margin: 14px -40px 8px;
+  background: var(--purple);
+  color: #FFFFFF;
+  border-top: var(--border-width) solid var(--border);
+  border-bottom: var(--border-width) solid var(--border);
+  transform: rotate(-1.2deg) scaleX(1.04);
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 6px 20px rgba(89, 64, 216, 0.22);
+  z-index: 10;
+}
+
+.ticker-track {
+  display: inline-flex;
+  animation: scrollMarquee 26s linear infinite;
+}
+
+.ticker-wrapper:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-content {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ticker-content span {
+  padding: 0 18px;
+}
+
+.ticker-content i {
+  color: var(--lemon);
+  font-style: normal;
+  font-size: 24px;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-wrapper-sub {
+  background: var(--lemon);
+  color: #161020;
+  transform: rotate(1deg) scaleX(1.04);
+  margin-top: -8px;
+  padding: 8px 0;
+  z-index: 9;
+}
+.ticker-wrapper-sub .ticker-content {
+  font-size: 15px;
+  font-weight: 700;
+}
+.ticker-wrapper-sub .ticker-content i {
+  color: var(--pink);
+}
+
+/* ==========================================================================
+   ABOUT US / FOUNDERS SECTION WITH BADGE PORTRAITS
+   ========================================================================== */
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 28px;
+}
+
+.section-header h2 {
+  font-size: clamp(32px, 4.5vw, 48px);
+  margin: 12px 0 10px;
+}
+
+.section-header p {
+  font-size: 17px;
+  opacity: .88;
+  line-height: 1.55;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.founder-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop);
+  padding: 30px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s cubic-bezier(.2,1.3,.4,1), box-shadow .3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-pop-lg);
+}
+
+.founder-card.founder-abdullah {
+  background: linear-gradient(180deg, var(--card) 0%, var(--soft-purple) 100%);
+}
+
+.founder-card.founder-ayesha {
+  background: linear-gradient(180deg, var(--card) 0%, var(--soft) 100%);
+}
+
+.founder-badge-role {
+  display: inline-block;
+  background: var(--purple);
+  color: #FFF;
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 12.5px;
+  padding: 4px 14px;
+  border-radius: 99px;
+  border: 1.5px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.founder-card.founder-ayesha .founder-badge-role {
+  background: var(--pink);
+}
+
+.founder-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+/* Founder Portrait Badges */
+.founder-avatar-wrap {
+  width: 86px;
+  height: 86px;
+  border-radius: 20px;
+  border: 3px solid var(--border);
+  box-shadow: 4px 4px 0 var(--border);
+  overflow: hidden;
+  background: #120C1C;
+  flex-shrink: 0;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.founder-card:hover .founder-avatar-wrap {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 5px 6px 0 var(--pink);
+}
+
+.founder-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.founder-title h3 {
+  font-size: 26px;
+  margin-bottom: 3px;
+}
+
+.founder-title span {
+  font-family: var(--h);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--purple);
+  display: block;
+}
+
+:root[data-theme="dark"] .founder-title span {
+  color: var(--mint);
+}
+
+.founder-bio {
+  font-size: 15.5px;
+  line-height: 1.55;
+  margin-bottom: 18px;
+  opacity: .92;
+}
+
+.founder-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.founder-tag {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 var(--border);
+  color: var(--ink);
+}
+
+/* Manifesto Banner */
+.manifesto-banner {
+  background: var(--purple);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop-lg);
+  padding: 32px 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.manifesto-banner h3 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.manifesto-banner p {
+  font-size: 16px;
+  line-height: 1.55;
+  opacity: .95;
+}
+
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.manifesto-item {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+
+.manifesto-item b {
+  display: block;
+  font-family: var(--h);
+  font-size: 15.5px;
+  color: var(--lemon);
+  margin-bottom: 2px;
+}
+
+.manifesto-item span {
+  font-size: 13px;
+  line-height: 1.35;
+  display: block;
+  opacity: .9;
+}
+
+/* ==========================================================================
+   JOURNEY SECTION: 10% PREV - 80% ACTIVE - 10% NEXT PEEK AUTO SLIDER
+   ========================================================================== */
+.journey-section {
+  background: color-mix(in srgb, var(--soft) 50%, var(--bg));
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0 52px;
+}
+
+.journey-steps-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.journey-step-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-radius: 99px;
+  background: var(--card);
+  color: var(--ink);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  font-family: var(--h);
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.journey-step-btn:hover {
+  transform: translateY(-2px);
+  background: var(--soft);
+}
+
+.journey-step-btn.active {
+  background: var(--purple);
+  color: #FFFFFF;
+  box-shadow: 4px 5px 0 var(--pink);
+  transform: translateY(-2px);
+}
+
+.journey-step-btn.active i {
+  color: var(--lemon);
+}
+
+/* 10% - 80% - 10% Peek Carousel Viewport */
+.peek-carousel-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0 18px;
+}
+
+.peek-carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.4, 1);
+  will-change: transform;
+  align-items: stretch;
+}
+
+.journey-slide-card {
+  flex: 0 0 80%;
+  box-sizing: border-box;
+  background: var(--card);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-pop);
+  padding: 28px 30px;
+  position: relative;
+  opacity: 0.4;
+  transform: scale(0.92);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.2, 1.2, 0.4, 1), box-shadow 0.3s;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.journey-slide-card.active {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: var(--shadow-pop-lg);
+  cursor: default;
+}
+
+.journey-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.journey-card-phase {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.journey-phase-tag {
+  font-family: var(--h);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--purple);
+  letter-spacing: 0.06em;
+}
+
+:root[data-theme="dark"] .journey-phase-tag {
+  color: var(--mint);
+}
+
+.journey-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--lemon);
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 var(--border);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  flex-shrink: 0;
+  transition: transform .3s ease;
+}
+
+.journey-slide-card.active .journey-card-icon {
+  transform: rotate(12deg) scale(1.08);
+}
+
+.journey-card-body h3 {
+  font-size: clamp(22px, 3vw, 30px);
+  margin-bottom: 8px;
+}
+
+.journey-card-body p {
+  font-size: 15.5px;
+  line-height: 1.55;
+  opacity: .92;
+  margin-bottom: 16px;
+}
+
+.journey-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  border-top: 1.5px dashed color-mix(in srgb, var(--ink) 20%, transparent);
+  padding-top: 14px;
+}
+
+.journey-metric-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--soft-mint);
+  color: #161020;
+  border: 1.5px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.journey-metric-pill.pink-pill {
+  background: var(--soft);
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+/* ==========================================================================
+   NAIL ART GALLERY: 10% PREV - 80% ACTIVE - 10% NEXT PEEK SLIDER
+   ========================================================================== */
+.gallery-section {
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0 52px;
+}
+
+.gallery-filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.filter-btn {
+  font-family: var(--h);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 18px;
+  border-radius: 99px;
+  background: var(--card);
+  color: var(--ink);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+  background: var(--soft);
+}
+
+.filter-btn.active {
+  background: var(--purple);
+  color: #FFFFFF;
+  box-shadow: 4px 5px 0 var(--pink);
+  transform: translateY(-2px);
+}
+
+.gallery-slide-card {
+  flex: 0 0 80%;
+  box-sizing: border-box;
+  background: var(--card);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-pop);
+  padding: 26px 28px;
+  position: relative;
+  opacity: 0.4;
+  transform: scale(0.92);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.2, 1.2, 0.4, 1), box-shadow 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gallery-slide-card.active {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: var(--shadow-pop-lg);
+  cursor: default;
+}
+
+.gallery-card-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 26px;
+  align-items: center;
+}
+
+.gallery-media-col {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: var(--border-width) solid var(--border);
+  box-shadow: 4px 5px 0 var(--border);
+  aspect-ratio: 1 / 0.95;
+  background: var(--soft);
+  display: grid;
+  place-items: center;
+  padding: 12px;
+}
+
+.gallery-media-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform .4s ease;
+}
+
+.gallery-slide-card.active:hover .gallery-media-col img {
+  transform: scale(1.05);
+}
+
+.gallery-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--lemon);
+  color: #161020;
+  border: 1.5px solid var(--border);
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  box-shadow: 2px 2px 0 var(--border);
+  z-index: 2;
+}
+
+.gallery-content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gallery-content-col h3 {
+  font-size: clamp(24px, 3.2vw, 34px);
+  margin: 4px 0 6px;
+}
+
+.gallery-content-col p {
+  font-size: 15px;
+  line-height: 1.55;
+  opacity: .92;
+}
+
+.gallery-specs-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.gallery-spec-pill {
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 4px 12px;
+  background: var(--soft-purple);
+  color: var(--purple);
+  border: 1.5px solid var(--border);
+  border-radius: 99px;
+}
+
+:root[data-theme="dark"] .gallery-spec-pill {
+  background: #2D1D3F;
+  color: var(--mint);
+  border-color: var(--border);
+}
+
+.gallery-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1.5px dashed color-mix(in srgb, var(--ink) 20%, transparent);
+}
+
+/* Shared Carousel Toolbar Controls */
+.carousel-controls-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.carousel-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--ink);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-2px);
+  background: var(--lemon);
+  box-shadow: 4px 5px 0 var(--border);
+}
+
+.autoplay-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-pop-sm);
+  padding: 7px 16px;
+  border-radius: 99px;
+  font-family: var(--h);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.autoplay-pill:hover {
+  background: var(--soft);
+}
+
+.autoplay-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulseGreen 1.6s infinite;
+}
+
+@keyframes pulseGreen {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.carousel-counter-pill {
+  font-family: var(--h);
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 14px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 99px;
+  box-shadow: var(--shadow-pop-sm);
+  color: var(--ink);
+}
+
+/* ==========================================================================
+   EXCLUSIVE INSTAGRAM CONTACT & DM CARD (CUSTOM ORDERS & COMMUNITY)
+   ========================================================================== */
+.contact-section {
+  padding: 44px 0 54px;
+}
+
+.contact-card {
+  background: var(--soft);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-pop-lg);
+  padding: 42px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card h2 {
+  font-size: clamp(30px, 4.2vw, 48px);
+  margin-bottom: 10px;
+}
+
+.contact-card p.contact-sub {
+  font-size: 17.5px;
+  max-width: 580px;
+  margin: 0 auto 24px;
+  line-height: 1.55;
+}
+
+/* Instagram Highlight Banner */
+.insta-highlight-box {
+  background: var(--card);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-pop);
+  padding: 22px 28px;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.insta-id-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.insta-icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--border);
+  box-shadow: 2.5px 2.5px 0 var(--border);
+  flex-shrink: 0;
+}
+
+.insta-id-group h4 {
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: var(--ink);
+}
+
+.insta-id-group span {
+  font-size: 13px;
+  opacity: .85;
+  display: block;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.btn-insta-gradient {
+  background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+  color: #FFFFFF !important;
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop);
+}
+
+.btn-insta-gradient:hover {
+  background: linear-gradient(45deg, #e6683c, #cc2366, #9b1470);
+  box-shadow: 6px 8px 0 var(--lemon);
+}
+
+.parent-supervision-box {
+  background: var(--card);
+  border: 2px dashed var(--purple);
+  border-radius: var(--radius-md);
+  padding: 18px 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14.5px;
+  line-height: 1.55;
+  text-align: left;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.parent-supervision-box .shield-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   PERMANENTLY FIXED SLEEK DARK FOOTER (High Contrast in All Modes)
+   ========================================================================== */
+footer.site-footer {
+  background: #120C1C !important;
+  color: #FFF5EE !important;
+  padding: 42px 0 30px;
+  border-top: var(--border-width) solid var(--border);
+}
+
+footer.site-footer .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  list-style: none;
+}
+
+.footer-nav a {
+  font-family: var(--h);
+  font-weight: 700;
+  font-size: 14.5px;
+  color: #FFF5EE !important;
+  opacity: .88;
+  transition: opacity .2s, color .2s;
+}
+
+.footer-nav a:hover {
+  opacity: 1;
+  color: var(--lemon) !important;
+}
+
+.footer-copy {
+  font-size: 13.5px;
+  opacity: .78;
+  color: #FFF5EE !important;
+}
+
+/* ==========================================================================
+   MODAL / POPUP DIALOGS (NAIL DETAILS MODAL)
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 16, 32, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-card {
+  background: var(--card);
+  color: var(--ink);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-pop-lg);
+  width: 100%;
+  max-width: 520px;
+  padding: 30px 28px;
+  position: relative;
+  transform: scale(0.92) translateY(20px);
+  transition: transform .3s cubic-bezier(.2,1.3,.3,1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-overlay.active .modal-card {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--soft);
+  border: 2px solid var(--border);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.modal-close-btn:hover {
+  transform: rotate(90deg) scale(1.1);
+  background: var(--pink);
+  color: #FFF;
+}
+
+.modal-header h3 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+/* Toast notification box */
+.toast-msg {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--lemon);
+  color: #161020;
+  border: var(--border-width) solid var(--border);
+  box-shadow: var(--shadow-pop);
+  padding: 12px 20px;
+  border-radius: var(--radius-full);
+  font-family: var(--h);
+  font-weight: 800;
+  font-size: 14.5px;
+  z-index: 300;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform .35s cubic-bezier(.2,1.3,.3,1), opacity .3s;
+  pointer-events: none;
+}
+
+.toast-msg.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Custom Cursor (Sparkle on Desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .custom-cursor-sparkle {
+    position: fixed;
+    width: 14px;
+    height: 14px;
+    background: var(--pink);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    transition: width .15s, height .15s, background .2s;
+  }
+}
+
+/* Scroll Reveal Utility */
+.rv {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .5s ease, transform .5s cubic-bezier(.16, 1, .3, 1);
+}
+
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 960px) {
+  .hero .wrap {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .manifesto-banner {
+    grid-template-columns: 1fr;
+  }
+  nav.main-nav ul {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
+  }
+  .mobile-drawer {
+    display: flex;
+  }
+  .gallery-card-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .gallery-media-col {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 36px 0;
+  }
+  .hero {
+    padding: 26px 0 34px;
+  }
+  .hero-title {
+    font-size: 34px;
+  }
+  .contact-card {
+    padding: 28px 16px;
+  }
+  .journey-slide-card,
+  .gallery-slide-card {
+    flex: 0 0 88%;
+    padding: 20px 16px;
+  }
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .hero-title .word, .rv {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .ticker-track {
+    animation: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Custom Cursor element -->
+<div class="custom-cursor-sparkle" id="cursorSparkle" aria-hidden="true"></div>
+
+<!-- ==========================================================================
+     STICKY HEADER & NAVIGATION
+     ========================================================================== -->
+<header class="site-header" id="header">
+  <div class="wrap">
+    <a href="#top" class="brand-logo" aria-label="NOVA NAILS Home">
+      <img src="./images/nova_nails_logo.png" alt="Nova Nails Logo" class="brand-logo-img" onerror="this.src='Nova Nails_ Dream, Create, Shine.png'">
+      <div class="brand-logo-text">
+        NOVA <span>NAILS</span>
+        <div class="brand-logo-tagline">Dream • Create • Shine</div>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#about">About Founders</a></li>
+        <li><a href="#journey">Our Journey</a></li>
+        <li><a href="#gallery">Nail Studio</a></li>
+        <li><a href="#contact">Instagram & Orders</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light or dark theme" title="Toggle Theme">
+        <span id="themeIcon">🌙</span>
+      </button>
+
+      <a href="https://www.instagram.com/nova_nails_26/" target="_blank" rel="noopener" class="btn btn-sm btn-lemon" style="display:none; @media(min-width:768px){display:inline-flex;}">
+        Follow @nova_nails_26 ↗
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+  <a href="#about" class="mob-link">About Founders (Abdullah & Ayesha)</a>
+  <a href="#journey" class="mob-link">Our Journey</a>
+  <a href="#gallery" class="mob-link">Nail Studio</a>
+  <a href="#contact" class="mob-link">Instagram & Orders</a>
+  <a href="https://www.instagram.com/nova_nails_26/" target="_blank" rel="noopener" class="btn btn-lemon" style="margin-top:8px;">Follow @nova_nails_26 on Instagram</a>
+</div>
+
+<!-- ==========================================================================
+     HERO SECTION
+     ========================================================================== -->
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="badge-tag">✨ Young Founders • Big Dreams</span>
+
+      <h1 class="hero-title" id="heroHeadline">
+        <span class="highlight-purple">Small</span> beginnings. <br>
+        <span class="highlight-pink">BIG</span> ambitions.
+      </h1>
+
+      <p class="hero-lead">
+        We are <strong>NOVA NAILS</strong>! Founded by <strong>Abdullah</strong> (Administration Director) and <strong>Ayesha</strong> (Director of Operation and Development). Turning custom nail artistry into an energetic, kid-led business empire. Handcrafted press-on magic and big dreams!
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#about" class="btn">Meet Abdullah & Ayesha ↓</a>
+        <a href="#gallery" class="btn btn-ghost">Explore Nail Art ↗</a>
+        <a href="https://www.instagram.com/nova_nails_26/" target="_blank" rel="noopener" class="btn btn-pink">Follow on Instagram 📸</a>
+      </div>
+
+      <!-- High-Contrast Stat Chips -->
+      <div class="hero-stats">
+        <div class="stat-chip chip-lemon">
+          <b>2 Founders</b>
+          <span>Abdullah & Ayesha • Big Ambitions</span>
+        </div>
+        <div class="stat-chip chip-mint">
+          <b>1 Big Vision</b>
+          <span>Where Youth Creativity Meets Hustle</span>
+        </div>
+        <div class="stat-chip chip-pink">
+          <b>100% Handcrafted</b>
+          <span>Salon-Grade Reusable Press-Ons</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Interactive Stage -->
+    <div class="hero-stage-container">
+      <div class="hero-stage" id="heroTiltStage">
+        <!-- Floating Sticker Badges -->
+        <div class="floating-sticker top-left">✨ Dream, Create, Shine</div>
+        <div class="floating-sticker top-right">💅 Gen-Z Hustle</div>
+        <div class="floating-sticker bottom-left">🎨 100% Hand-Painted</div>
+
+        <!-- Sparkle SVGs -->
+        <svg class="sparkle-icon" style="top:10%;left:10%;width:38px" viewBox="0 0 24 24"><path fill="#FF4FA3" d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+        <svg class="sparkle-icon" style="bottom:12%;right:10%;width:44px;animation-duration:9s" viewBox="0 0 24 24"><path fill="#77E5D2" d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+
+        <!-- Centered Logo Card -->
+        <div class="hero-logo-showcase">
+          <img src="./images/nova_nails_logo.png" alt="Nova Nails Official Brand Visual" onerror="this.src='Nova Nails_ Dream, Create, Shine.png'">
+          <div class="hero-logo-badge">Est. 2026 • Official Brand</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     DUAL MARQUEE TICKER TAPE
+     ========================================================================== -->
+<div class="ticker-wrapper" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-content">
+      <span>DREAM BIG</span> <i>✦</i>
+      <span>CREATE BOLDLY</span> <i>✦</i>
+      <span>START YOUNG</span> <i>✦</i>
+      <span>NOVA NAILS</span> <i>✦</i>
+      <span>@NOVA_NAILS_26</span> <i>✦</i>
+      <span>DREAM, CREATE, SHINE</span> <i>✦</i>
+      <span>DM US FOR ORDERS</span> <i>✦</i>
+      <span>BOLD NAILS</span> <i>✦</i>
+      <span>BIGGER DREAMS</span> <i>✦</i>
+    </div>
+    <div class="ticker-content">
+      <span>DREAM BIG</span> <i>✦</i>
+      <span>CREATE BOLDLY</span> <i>✦</i>
+      <span>START YOUNG</span> <i>✦</i>
+      <span>NOVA NAILS</span> <i>✦</i>
+      <span>@NOVA_NAILS_26</span> <i>✦</i>
+      <span>DREAM, CREATE, SHINE</span> <i>✦</i>
+      <span>DM US FOR ORDERS</span> <i>✦</i>
+      <span>BOLD NAILS</span> <i>✦</i>
+      <span>BIGGER DREAMS</span> <i>✦</i>
+    </div>
+  </div>
+</div>
+
+<div class="ticker-wrapper ticker-wrapper-sub" aria-hidden="true">
+  <div class="ticker-track" style="animation-direction: reverse; animation-duration: 22s;">
+    <div class="ticker-content">
+      <span>FOLLOW @NOVA_NAILS_26</span> <i>✦</i>
+      <span>HANDMADE PRESS-ON SETS</span> <i>✦</i>
+      <span>SALON-GRADE QUALITY</span> <i>✦</i>
+      <span>3D NAIL CHARMS & KAWAII ART</span> <i>✦</i>
+      <span>DM ON INSTAGRAM TO ORDER</span> <i>✦</i>
+    </div>
+    <div class="ticker-content">
+      <span>FOLLOW @NOVA_NAILS_26</span> <i>✦</i>
+      <span>HANDMADE PRESS-ON SETS</span> <i>✦</i>
+      <span>SALON-GRADE QUALITY</span> <i>✦</i>
+      <span>3D NAIL CHARMS & KAWAII ART</span> <i>✦</i>
+      <span>DM ON INSTAGRAM TO ORDER</span> <i>✦</i>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     ABOUT US / FOUNDERS SECTION WITH BADGE PORTRAITS
+     ========================================================================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-header rv">
+      <span class="badge-tag pink">Our Story</span>
+      <h2>Meet the Founders: Abdullah & Ayesha</h2>
+      <p>
+        Two ambitious leaders turning passion into a flourishing business. Combining strategic direction and cutting-edge nail artistry to inspire young entrepreneurs everywhere.
+      </p>
+    </div>
+
+    <div class="founders-grid">
+      <!-- Founder 1: Abdullah -->
+      <div class="founder-card founder-abdullah rv">
+        <span class="founder-badge-role">Administration Director 💼</span>
+        <div class="founder-header">
+          <div class="founder-avatar-wrap">
+            <img src="./images/Neon Nova Nails Portrait Badge.png" alt="Abdullah - Administration Director" class="founder-avatar-img" onerror="this.src='images/nova_nails_logo.png'">
+          </div>
+          <div class="founder-title">
+            <h3>Abdullah</h3>
+            <span>Administration Director • Age 12</span>
+          </div>
+        </div>
+        <p class="founder-bio">
+          "I oversee our administrative framework, financial budgeting, and strategic partnerships. I focus on scaling Nova Nails into a reputable youth brand, ensuring seamless logistics, guardian compliance, and long-term business growth!"
+        </p>
+        <div class="founder-tags">
+          <span class="founder-tag">💼 Administrative Director</span>
+          <span class="founder-tag">📊 Budgeting & Strategy</span>
+          <span class="founder-tag">🤝 Partnerships & Growth</span>
+        </div>
+      </div>
+
+      <!-- Founder 2: Ayesha -->
+      <div class="founder-card founder-ayesha rv">
+        <span class="founder-badge-role">Director of Operation and Development 💅</span>
+        <div class="founder-header">
+          <div class="founder-avatar-wrap">
+            <img src="./images/Nova Nails Glam Badge.png" alt="Ayesha - Director of Operation and Development" class="founder-avatar-img" onerror="this.src='images/nova_nails_logo.png'">
+          </div>
+          <div class="founder-title">
+            <h3>Ayesha</h3>
+            <span>Director of Operation and Development • Age 11</span>
+          </div>
+        </div>
+        <p class="founder-bio">
+          "I direct all studio operations, design development, and custom nail art production. From sculpting 3D bows to perfecting color harmonies, I ensure every single handcrafted set delivers salon-grade luxury and lasting confidence."
+        </p>
+        <div class="founder-tags">
+          <span class="founder-tag">🎨 Studio Operations</span>
+          <span class="founder-tag">🔬 Product Development</span>
+          <span class="founder-tag">✨ 3D Charms & Artistry</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manifesto Banner -->
+    <div class="manifesto-banner rv">
+      <div>
+        <span class="badge-tag mint" style="margin-bottom:12px;">The Nova Promise</span>
+        <h3>Creativity Meets Serious Craftsmanship</h3>
+        <p>
+          We might be young, but our standards are sky-high. Every set is crafted using multi-layer salon gel, reinforced apex tips, and gentle adhesive methods that protect your natural nails.
+        </p>
+      </div>
+
+      <div class="manifesto-grid">
+        <div class="manifesto-item">
+          <b>💎 Reusable & Tough</b>
+          <span>Wear them for an evening or up to 2-3 weeks with proper prep.</span>
+        </div>
+        <div class="manifesto-item">
+          <b>🛡️ Safety & Guardian Backed</b>
+          <span>Parent-guided business operations and safe youth interactions.</span>
+        </div>
+        <div class="manifesto-item">
+          <b>🌈 Limitless Creativity</b>
+          <span>From kawaii cloud aesthetics to futuristic metallic Y2K vibes.</span>
+        </div>
+        <div class="manifesto-item">
+          <b>🎓 Inspiring Others</b>
+          <span>Hosting workshops and masterclasses to lift up next-gen creators.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     JOURNEY SECTION: 10% PREV - 80% ACTIVE - 10% NEXT PEEK AUTO SLIDER
+     ========================================================================== -->
+<section id="journey" class="journey-section">
+  <div class="wrap">
+    <div class="section-header rv" style="margin-bottom:18px;">
+      <span class="badge-tag">Milestones</span>
+      <h2>Our Entrepreneurial Journey</h2>
+      <p>From bedroom sketches to launching an official brand, custom studio drops, and inspiring young creators.</p>
+    </div>
+
+    <!-- Step Buttons Nav -->
+    <div class="journey-steps-nav rv" id="journeyStepsNav">
+      <button class="journey-step-btn active" data-slide="0"><i>01</i> The Spark</button>
+      <button class="journey-step-btn" data-slide="1"><i>02</i> First Drops</button>
+      <button class="journey-step-btn" data-slide="2"><i>03</i> Nova Nails</button>
+      <button class="journey-step-btn" data-slide="3"><i>04</i> Studio Launch</button>
+      <button class="journey-step-btn" data-slide="4"><i>05</i> The Future</button>
+    </div>
+
+    <!-- 10% - 80% - 10% Peek Carousel Viewport -->
+    <div class="peek-carousel-viewport" id="journeyViewport">
+      <div class="peek-carousel-track" id="journeyTrack">
+        
+        <!-- Slide 0 -->
+        <div class="journey-slide-card active" data-index="0">
+          <div>
+            <div class="journey-card-top">
+              <div class="journey-card-phase">
+                <span class="journey-phase-tag">Phase 01 • The Spark</span>
+                <span style="font-size:13px; opacity:.85; font-weight:700;">Early Discovery</span>
+              </div>
+              <div class="journey-card-icon">💡</div>
+            </div>
+            <div class="journey-card-body">
+              <h3>Falling in Love With Nail Art & Studio Craft</h3>
+              <p>
+                Weekend experiments with vibrant polishes quickly revealed something bigger: nails are wearable mini-canvases of personality. Ayesha began studying precision line art, while Abdullah saw the potential to build a brand that empowers youth creativity.
+              </p>
+            </div>
+          </div>
+          <div class="journey-card-footer">
+            <span class="journey-metric-pill">🎨 50+ Prototype Designs</span>
+            <span class="journey-metric-pill pink-pill">⭐ Gel Curing Mastery</span>
+          </div>
+        </div>
+
+        <!-- Slide 1 -->
+        <div class="journey-slide-card" data-index="1">
+          <div>
+            <div class="journey-card-top">
+              <div class="journey-card-phase">
+                <span class="journey-phase-tag">Phase 02 • First Drops</span>
+                <span style="font-size:13px; opacity:.85; font-weight:700;">First 20 Custom Sets</span>
+              </div>
+              <div class="journey-card-icon">💅</div>
+            </div>
+            <div class="journey-card-body">
+              <h3>Handcrafted Sets for Friends & Family</h3>
+              <p>
+                We launched our initial collection for classmates and family members. The reaction was electric: clients loved the snug custom fit, the 3D charms, and the chip-resistant durability. That confirmed our vision: this was a viable business.
+              </p>
+            </div>
+          </div>
+          <div class="journey-card-footer">
+            <span class="journey-metric-pill">📦 100% Five-Star Reviews</span>
+            <span class="journey-metric-pill pink-pill">✨ First Paying Customers</span>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="journey-slide-card" data-index="2">
+          <div>
+            <div class="journey-card-top">
+              <div class="journey-card-phase">
+                <span class="journey-phase-tag">Phase 03 • Brand Rebirth</span>
+                <span style="font-size:13px; opacity:.85; font-weight:700;">Brand Identity Launched</span>
+              </div>
+              <div class="journey-card-icon">🌟</div>
+            </div>
+            <div class="journey-card-body">
+              <h3>NOVA NAILS is Born: Dream, Create, Shine</h3>
+              <p>
+                We established <strong>NOVA NAILS</strong> with our official motto: <em>Dream, Create, Shine</em>. Abdullah structured our administrative operations, while Ayesha developed our signature pop aesthetic and packaging kits.
+              </p>
+            </div>
+          </div>
+          <div class="journey-card-footer">
+            <span class="journey-metric-pill">🚀 Official Logo & Brand Launch</span>
+            <span class="journey-metric-pill pink-pill">📸 Instagram Growth</span>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="journey-slide-card" data-index="3">
+          <div>
+            <div class="journey-card-top">
+              <div class="journey-card-phase">
+                <span class="journey-phase-tag">Phase 04 • Studio Growth</span>
+                <span style="font-size:13px; opacity:.85; font-weight:700;">Studio Scaling</span>
+              </div>
+              <div class="journey-card-icon">🎨</div>
+            </div>
+            <div class="journey-card-body">
+              <h3>Bespoke Collections & Creative Masterclasses</h3>
+              <p>
+                We scaled up from small batches to bespoke customized drops. Abdullah streamlined order logistics and customer support, while Ayesha hosted live design masterclasses teaching fellow young creators the secrets of 3D charms and color harmonies!
+              </p>
+            </div>
+          </div>
+          <div class="journey-card-footer">
+            <span class="journey-metric-pill">🛍️ Custom Orders Scaling</span>
+            <span class="journey-metric-pill pink-pill">💡 Inspiring Next-Gen Founders</span>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="journey-slide-card" data-index="4">
+          <div>
+            <div class="journey-card-top">
+              <div class="journey-card-phase">
+                <span class="journey-phase-tag">Phase 05 • What's Next</span>
+                <span style="font-size:13px; opacity:.85; font-weight:700;">Expanding Horizons</span>
+              </div>
+              <div class="journey-card-icon">🚀</div>
+            </div>
+            <div class="journey-card-body">
+              <h3>DIY Starter Kits & Nationwide Pop-Up Studios</h3>
+              <p>
+                Our roadmap includes launching all-in-one DIY press-on design kits for kids and teens, expanding into retail pop-up shops, and establishing a youth creator incubator to mentor ambitious young founders.
+              </p>
+            </div>
+          </div>
+          <div class="journey-card-footer">
+            <span class="journey-metric-pill">🛍️ DIY Kits in Development</span>
+            <span class="journey-metric-pill pink-pill">🌐 Nationwide Pop-Ups</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Carousel Toolbar Controls -->
+    <div class="carousel-controls-toolbar rv">
+      <button class="carousel-btn" id="journeyPrevBtn" aria-label="Previous milestone slide">←</button>
+      
+      <button class="autoplay-pill" id="autoplayToggle" aria-label="Toggle auto-play">
+        <span class="autoplay-indicator" id="autoIndicator"></span>
+        <span id="autoText">Auto-Moving (Active)</span>
+      </button>
+
+      <button class="carousel-btn" id="journeyNextBtn" aria-label="Next milestone slide">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     NAIL ART GALLERY: 10% PREV - 80% ACTIVE - 10% NEXT PEEK SLIDER
+     ========================================================================== -->
+<section id="gallery" class="gallery-section">
+  <div class="wrap">
+    <div class="section-header rv" style="margin-bottom:18px;">
+      <span class="badge-tag pink">The Studio</span>
+      <h2>Handcrafted Press-On Collections</h2>
+      <p>Individually measured, shaped, hand-painted, and sealed with high-gloss UV gel for weeks of chip-free wear.</p>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="gallery-filter-controls rv">
+      <button class="filter-btn active" data-filter="all">All Sets (8)</button>
+      <button class="filter-btn" data-filter="kawaii">Kawaii & 3D</button>
+      <button class="filter-btn" data-filter="pop">Pop & Y2K</button>
+      <button class="filter-btn" data-filter="holographic">Holographic & Chrome</button>
+      <button class="filter-btn" data-filter="pastel">Pastel Aesthetic</button>
+    </div>
+
+    <!-- 10% - 80% - 10% Peek Carousel Viewport -->
+    <div class="peek-carousel-viewport" id="galleryViewport">
+      <div class="peek-carousel-track" id="galleryTrack">
+
+        <!-- Slide 0: Pastel Cloud Dream (Photo) -->
+        <div class="gallery-slide-card active" data-index="0" data-category="kawaii pastel">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#FFEAF3;">
+              <span class="gallery-badge">⭐ Bestseller</span>
+              <img src="./images/pastel_cloud_nails.jpg" alt="Pastel Cloud Dream Press On Nails">
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag mint" style="font-size:11px; padding:3px 10px;">Almond • Medium</span>
+                <h3>Pastel Cloud Dream</h3>
+                <p>Hand-painted strawberries, sky-blue clouds, delicate daisies, and lucky pastel star accents in a cute presentation box. Designed with double UV topcoat for lasting glass shine.</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">🌸 3D Star & Fruit</span>
+                  <span class="gallery-spec-pill">💎 Reusable 3-5x</span>
+                  <span class="gallery-spec-pill">✨ Prep Kit Included</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Pastel Cloud Dream', 'Almond • Medium', 'Hand-painted strawberries, sky-blue clouds, daisies, and lucky pastel star accents in a cute presentation box.', './images/pastel_cloud_nails.jpg')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 1: Electric Purple Swirl (Photo) -->
+        <div class="gallery-slide-card" data-index="1" data-category="pop">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#EAE4FF;">
+              <span class="gallery-badge" style="background:var(--pink);color:#FFF;">⚡ Ayesha Pick</span>
+              <img src="./images/electric_purple_nails.jpg" alt="Electric Purple Swirl Nails with HELLO and graffiti heart">
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag lemon" style="font-size:11px; padding:3px 10px;">Oval • Short/Med</span>
+                <h3>Electric Purple Swirl</h3>
+                <p>Deep violet psychedelic swirl with edgy graffiti heart art and a bold 'HELLO' typographic statement nail. Crafted for big energy, parties, and bold everyday wear.</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">💜 Psychedelic Violet</span>
+                  <span class="gallery-spec-pill">🖤 Graffiti Heart Art</span>
+                  <span class="gallery-spec-pill">💅 Salon Apex Arch</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Electric Purple Swirl', 'Oval • Short/Med', 'Deep violet psychedelic swirl with edgy graffiti heart art and a bold HELLO typographic statement nail.', './images/electric_purple_nails.jpg')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Y2K Sticker Mania (Photo) -->
+        <div class="gallery-slide-card" data-index="2" data-category="pop kawaii">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#FFF8CC;">
+              <span class="gallery-badge">🔥 Y2K Trend</span>
+              <img src="./images/y2k_stickers.jpg" alt="Y2K Sticker Mania Nails">
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag mint" style="font-size:11px; padding:3px 10px;">Square • Medium</span>
+                <h3>Y2K Sticker Mania</h3>
+                <p>Retro smiley faces, neon sticker collage vibes, checkered patterns, and bold positive affirmations. An iconic tribute to early 2000s nostalgic pop culture.</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">🌈 Multi-Color Stickers</span>
+                  <span class="gallery-spec-pill">✨ High-Gloss Finish</span>
+                  <span class="gallery-spec-pill">🛡️ Chip-Resistant</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Y2K Sticker Mania', 'Square • Medium', 'Retro smiley faces, neon sticker collage vibes, checkered patterns, and bold positive affirmations.', './images/y2k_stickers.jpg')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Holo Pink Fantasy (Vector Art) -->
+        <div class="gallery-slide-card" data-index="3" data-category="holographic kawaii">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#FFE0EE;">
+              <span class="gallery-badge" style="background:var(--mint);">💎 3D Charms</span>
+              <svg viewBox="0 0 240 240" style="width:85%;height:85%;">
+                <defs>
+                  <linearGradient id="holoG2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FF4FA3"/>
+                    <stop offset="50%" stop-color="#C9BDFF"/>
+                    <stop offset="100%" stop-color="#77E5D2"/>
+                  </linearGradient>
+                </defs>
+                <rect x="20" y="50" width="32" height="110" rx="16" fill="url(#holoG2)" stroke="#241B2F" stroke-width="2"/>
+                <rect x="62" y="30" width="32" height="130" rx="16" fill="#FFB3D9" stroke="#241B2F" stroke-width="2"/>
+                <rect x="104" y="20" width="32" height="140" rx="16" fill="url(#holoG2)" stroke="#241B2F" stroke-width="2"/>
+                <rect x="146" y="32" width="32" height="130" rx="16" fill="#FFFFFF" stroke="#241B2F" stroke-width="2"/>
+                <rect x="188" y="54" width="32" height="110" rx="16" fill="url(#holoG2)" stroke="#241B2F" stroke-width="2"/>
+                <path d="M112 70 Q120 62 128 70 Q120 78 112 70 Z" fill="#FFE66D" stroke="#241B2F" stroke-width="1.5"/>
+                <circle cx="120" cy="70" r="3" fill="#FF4FA3"/>
+                <circle cx="78" cy="80" r="4" fill="#FFF"/>
+                <circle cx="162" cy="90" r="3" fill="#FF4FA3"/>
+              </svg>
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag pink" style="font-size:11px; padding:3px 10px;">Coffin • Long</span>
+                <h3>Holo Pink Fantasy</h3>
+                <p>Multi-chrome shifting pink base topped with handmade 3D acrylic ribbons and Swarovski-style crystal pearls. Shimmers across magenta, violet, and baby mint under light.</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">🎀 Hand-Sculpted Ribbons</span>
+                  <span class="gallery-spec-pill">💎 Shimmer Chrome</span>
+                  <span class="gallery-spec-pill">✨ Luxury Finish</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Holo Pink Fantasy', 'Coffin • Long', 'Multi-chrome shifting pink base topped with handmade 3D acrylic ribbons and Swarovski-style crystal pearls.', '')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Tropical Bloom Pop (Vector Art) -->
+        <div class="gallery-slide-card" data-index="4" data-category="pastel pop">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#FFF0D9;">
+              <span class="gallery-badge">🌺 Summer Drop</span>
+              <svg viewBox="0 0 240 240" style="width:85%;height:85%;">
+                <rect x="20" y="50" width="32" height="110" rx="16" fill="#FF765E" stroke="#241B2F" stroke-width="2"/>
+                <rect x="62" y="30" width="32" height="130" rx="16" fill="#FFE66D" stroke="#241B2F" stroke-width="2"/>
+                <rect x="104" y="20" width="32" height="140" rx="16" fill="#77E5D2" stroke="#241B2F" stroke-width="2"/>
+                <rect x="146" y="32" width="32" height="130" rx="16" fill="#FF4FA3" stroke="#241B2F" stroke-width="2"/>
+                <rect x="188" y="54" width="32" height="110" rx="16" fill="#FFE66D" stroke="#241B2F" stroke-width="2"/>
+                <circle cx="120" cy="80" r="5" fill="#FFF"/>
+                <circle cx="112" cy="80" r="3" fill="#FF765E"/>
+                <circle cx="128" cy="80" r="3" fill="#FF765E"/>
+                <circle cx="120" cy="72" r="3" fill="#FF765E"/>
+                <circle cx="120" cy="88" r="3" fill="#FF765E"/>
+              </svg>
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag lemon" style="font-size:11px; padding:3px 10px;">Round • Short</span>
+                <h3>Tropical Bloom Pop</h3>
+                <p>Warm coral, sunny lemon petals, and fresh mint gradients that transport you straight to sunny beaches. Perfect for summer outings and daily confidence.</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">🌼 Hand-Painted Florals</span>
+                  <span class="gallery-spec-pill">☀️ Sunset Coral Glow</span>
+                  <span class="gallery-spec-pill">🌿 Gentle Tabs</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Tropical Bloom Pop', 'Round • Short', 'Warm coral, sunny lemon petals, and fresh mint gradients that transport you straight to sunny beaches.', '')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5: Cyber Chrome Glaze (Vector Art) -->
+        <div class="gallery-slide-card" data-index="5" data-category="holographic">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#E8FAF6;">
+              <span class="gallery-badge">✨ Pearl Glaze</span>
+              <svg viewBox="0 0 240 240" style="width:85%;height:85%;">
+                <defs>
+                  <linearGradient id="chromeG2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#EAE4FF"/>
+                    <stop offset="50%" stop-color="#77E5D2"/>
+                    <stop offset="100%" stop-color="#FFB3D9"/>
+                  </linearGradient>
+                </defs>
+                <rect x="20" y="50" width="32" height="110" rx="16" fill="url(#chromeG2)" stroke="#241B2F" stroke-width="2"/>
+                <rect x="62" y="30" width="32" height="130" rx="16" fill="url(#chromeG2)" stroke="#241B2F" stroke-width="2"/>
+                <rect x="104" y="20" width="32" height="140" rx="16" fill="url(#chromeG2)" stroke="#241B2F" stroke-width="2"/>
+                <rect x="146" y="32" width="32" height="130" rx="16" fill="url(#chromeG2)" stroke="#241B2F" stroke-width="2"/>
+                <rect x="188" y="54" width="32" height="110" rx="16" fill="url(#chromeG2)" stroke="#241B2F" stroke-width="2"/>
+                <path d="M28 80 Q120 110 204 80" stroke="#FFF" stroke-width="3" fill="none" opacity=".8"/>
+              </svg>
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag mint" style="font-size:11px; padding:3px 10px;">Stiletto • Medium</span>
+                <h3>Cyber Chrome Glaze</h3>
+                <p>High-shine glazed donut chrome over milk lavender jelly with liquid metal silver accents. Futuristic, minimalist, and ultra-sleek.</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">🪞 Liquid Metal Finish</span>
+                  <span class="gallery-spec-pill">🔮 Pearlescent Sheen</span>
+                  <span class="gallery-spec-pill">💎 High-Gloss Sealed</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Cyber Chrome Glaze', 'Stiletto • Medium', 'High-shine glazed donut chrome over milk lavender jelly with liquid metal silver accents.', '')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6: Minty Fresh Frenchie (Vector Art) -->
+        <div class="gallery-slide-card" data-index="6" data-category="pastel">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#DDF8F2;">
+              <span class="gallery-badge">🌿 Classic Twist</span>
+              <svg viewBox="0 0 240 240" style="width:85%;height:85%;">
+                <g>
+                  <rect x="20" y="50" width="32" height="110" rx="16" fill="#FFF0E6" stroke="#241B2F" stroke-width="2"/>
+                  <path d="M20 50 Q36 65 52 50 L52 70 Q36 85 20 70 Z" fill="#77E5D2"/>
+                </g>
+                <g>
+                  <rect x="62" y="30" width="32" height="130" rx="16" fill="#FFF0E6" stroke="#241B2F" stroke-width="2"/>
+                  <path d="M62 30 Q78 45 94 30 L94 50 Q78 65 62 50 Z" fill="#77E5D2"/>
+                </g>
+                <g>
+                  <rect x="104" y="20" width="32" height="140" rx="16" fill="#FFF0E6" stroke="#241B2F" stroke-width="2"/>
+                  <path d="M104 20 Q120 35 136 20 L136 40 Q120 55 104 40 Z" fill="#77E5D2"/>
+                </g>
+                <g>
+                  <rect x="146" y="32" width="32" height="130" rx="16" fill="#FFF0E6" stroke="#241B2F" stroke-width="2"/>
+                  <path d="M146 32 Q162 47 178 32 L178 52 Q162 67 146 52 Z" fill="#77E5D2"/>
+                </g>
+                <g>
+                  <rect x="188" y="54" width="32" height="110" rx="16" fill="#FFF0E6" stroke="#241B2F" stroke-width="2"/>
+                  <path d="M188 54 Q204 69 220 54 L220 74 Q204 89 188 74 Z" fill="#77E5D2"/>
+                </g>
+              </svg>
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag lemon" style="font-size:11px; padding:3px 10px;">Squoval • Short</span>
+                <h3>Minty Fresh Frenchie</h3>
+                <p>Clean sheer blush foundation accented with modern curved mint-green French smiles and micro-pearls. A clean-girl aesthetic with an energetic youth twist.</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">🌱 Fresh Mint Smiles</span>
+                  <span class="gallery-spec-pill">🤍 Sheer Blush Base</span>
+                  <span class="gallery-spec-pill">✨ Everyday Chic</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Minty Fresh Frenchie', 'Squoval • Short', 'Clean sheer blush foundation accented with modern curved mint-green French smiles and micro-pearls.', '')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 7: Lemon Buttercup Pop (Vector Art) -->
+        <div class="gallery-slide-card" data-index="7" data-category="kawaii pop">
+          <div class="gallery-card-inner">
+            <div class="gallery-media-col" style="background:#FFF9D2;">
+              <span class="gallery-badge">⭐ Sunshine</span>
+              <svg viewBox="0 0 240 240" style="width:85%;height:85%;">
+                <rect x="20" y="50" width="32" height="110" rx="16" fill="#FFE66D" stroke="#241B2F" stroke-width="2"/>
+                <rect x="62" y="30" width="32" height="130" rx="16" fill="#FFFFFF" stroke="#241B2F" stroke-width="2"/>
+                <rect x="104" y="20" width="32" height="140" rx="16" fill="#FFE66D" stroke="#241B2F" stroke-width="2"/>
+                <rect x="146" y="32" width="32" height="130" rx="16" fill="#FF765E" stroke="#241B2F" stroke-width="2"/>
+                <rect x="188" y="54" width="32" height="110" rx="16" fill="#FFE66D" stroke="#241B2F" stroke-width="2"/>
+                <path d="M78 80 l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FF4FA3"/>
+              </svg>
+            </div>
+            <div class="gallery-content-col">
+              <div>
+                <span class="badge-tag pink" style="font-size:11px; padding:3px 10px;">Almond • Short</span>
+                <h3>Lemon Buttercup Pop</h3>
+                <p>Vibrant sunny yellow with raised 3D sugar jelly dots, hand-painted mini stars, and coral pink accents. Bright, happy, and impossible to ignore!</p>
+                <div class="gallery-specs-row">
+                  <span class="gallery-spec-pill">🌟 3D Jelly Dots</span>
+                  <span class="gallery-spec-pill">🍋 Buttercup Yellow</span>
+                  <span class="gallery-spec-pill">💖 Coral Accents</span>
+                </div>
+              </div>
+              <div class="gallery-actions-row">
+                <button class="btn btn-sm btn-pink" onclick="openNailModal('Lemon Buttercup Pop', 'Almond • Short', 'Vibrant sunny yellow with raised 3D sugar jelly dots, hand-painted mini stars, and coral pink accents.', '')">Quick View & Details ↗</button>
+                <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">DM on Insta 💬</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Gallery Carousel Toolbar Controls -->
+    <div class="carousel-controls-toolbar rv">
+      <button class="carousel-btn" id="galleryPrevBtn" aria-label="Previous nail set">←</button>
+      
+      <button class="autoplay-pill" id="galleryAutoplayToggle" aria-label="Toggle gallery auto-play">
+        <span class="autoplay-indicator" id="galleryAutoIndicator"></span>
+        <span id="galleryAutoText">Auto-Moving (Active)</span>
+      </button>
+
+      <div class="carousel-counter-pill" id="galleryCounter">01 / 08</div>
+
+      <button class="carousel-btn" id="galleryNextBtn" aria-label="Next nail set">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     EXCLUSIVE INSTAGRAM CONTACT & DM CARD (CUSTOM ORDERS & COMMUNITY)
+     ========================================================================== -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-card rv">
+      <span class="badge-tag pink" style="margin-bottom:12px;">📸 ONLY ON INSTAGRAM</span>
+      <h2>Follow Our Journey & DM Us to Order!</h2>
+      <p class="contact-sub">
+        We post our latest 3D nail art drops, packaging reels, and design ideas exclusively on Instagram! Tap below to follow our page and slide into our DMs to get your custom handmade press-on set.
+      </p>
+
+      <!-- Instagram Highlight Card -->
+      <div class="insta-highlight-box">
+        <div class="insta-id-group">
+          <div class="insta-icon-badge">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>@nova_nails_26</h4>
+            <span>Official Instagram • Follow for Daily Drops</span>
+          </div>
+        </div>
+
+        <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-pink">
+          Open DM Chat 💬
+        </a>
+      </div>
+
+      <div class="contact-actions">
+        <a href="https://www.instagram.com/nova_nails_26/" target="_blank" rel="noopener" class="btn btn-insta-gradient">
+          Follow @nova_nails_26 on Instagram ↗
+        </a>
+        <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-lemon">
+          DM Us for Custom Orders 💬
+        </a>
+        <button class="btn btn-ghost" onclick="copyInstagram()">
+          Copy @nova_nails_26 📋
+        </button>
+      </div>
+
+      <div class="parent-supervision-box">
+        <div class="shield-icon">🛡️</div>
+        <div>
+          <b style="font-family:var(--h); font-size:15.5px; color:var(--purple); display:block; margin-bottom:3px;">Safety & Parental Oversight Notice</b>
+          Nova Nails is an entrepreneurial endeavor co-founded by young entrepreneurs Abdullah and Ayesha under the direct guidance of their parents and legal guardians. In strict compliance with child online safety standards, all Instagram direct messages, orders, and inquiries are supervised and answered by adult representatives.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ==========================================================================
+     PERMANENTLY FIXED SLEEK DARK FOOTER (High Contrast in All Modes)
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-logo">
+      <img src="./images/nova_nails_logo.png" alt="Nova Nails Logo" style="width:38px;height:38px;border-radius:10px;background:#FFF;padding:2px;" onerror="this.src='Nova Nails_ Dream, Create, Shine.png'">
+      <span style="font-family:var(--h); font-size:21px; font-weight:800; color:#FFF;">NOVA <span style="color:var(--pink);">NAILS</span></span>
+    </div>
+
+    <ul class="footer-nav">
+      <li><a href="#about">About Abdullah & Ayesha</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#gallery">Nail Studio</a></li>
+      <li><a href="https://www.instagram.com/nova_nails_26/" target="_blank" rel="noopener">Instagram (@nova_nails_26)</a></li>
+    </ul>
+
+    <p class="footer-copy">
+      © 2026 NOVA NAILS. Dream, Create, Shine. Co-founded by Abdullah & Ayesha. <br>
+      Creativity has no age limit.
+    </p>
+  </div>
+</footer>
+
+<!-- ==========================================================================
+     INTERACTIVE MODALS (NAIL DETAILS MODAL)
+     ========================================================================== -->
+<!-- Nail Details Modal -->
+<div class="modal-overlay" id="nailModal" role="dialog" aria-modal="true" aria-labelledby="modalNailTitle">
+  <div class="modal-card">
+    <button class="modal-close-btn" onclick="closeAllModals()" aria-label="Close dialog">&times;</button>
+    <div class="modal-header">
+      <span class="badge-tag mint" id="modalNailShape">Shape Info</span>
+      <h3 id="modalNailTitle" style="margin-top:10px;">Nail Set Title</h3>
+    </div>
+    <div id="modalNailImgContainer" style="margin:14px 0; border-radius:14px; overflow:hidden; border:2px solid var(--border);"></div>
+    <p id="modalNailDesc" style="font-size:15.5px; line-height:1.55; opacity:.9;"></p>
+    
+    <div style="background:var(--soft); padding:14px; border-radius:12px; margin:18px 0; border:1.5px solid var(--border);">
+      <b style="font-family:var(--h); display:block; margin-bottom:3px;">✨ What’s Included in Every Kit:</b>
+      <p style="font-size:13px; opacity:.9;">10 Handcrafted press-on nails, wooden cuticle stick, nail buffer, alcohol prep wipes, non-damaging adhesive jelly tabs, and storage box.</p>
+    </div>
+
+    <div style="display:flex; gap:10px; justify-content:flex-end;">
+      <button class="btn btn-sm btn-ghost" onclick="closeAllModals()">Close</button>
+      <a href="https://ig.me/m/nova_nails_26" target="_blank" rel="noopener" class="btn btn-sm btn-lemon" onclick="closeAllModals()">DM on Instagram to Order 💬</a>
+    </div>
+  </div>
+</div>
+
+<!-- Toast notification box -->
+<div class="toast-msg" id="toastMsg" role="status" aria-live="polite">Notification</div>
+
+<!-- ==========================================================================
+     INTERACTION SCRIPT
+     10%-80%-10% Peek Auto Carousel Engines for BOTH Journey & Nail Studio
+     ========================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  // 1. Theme Management (Light / Dark)
+  var themeToggle = document.getElementById('themeToggle');
+  var themeIcon = document.getElementById('themeIcon');
+  var root = document.documentElement;
+
+  function setTheme(theme) {
+    if (theme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+      themeIcon.textContent = '☀️';
+    } else {
+      root.setAttribute('data-theme', 'light');
+      themeIcon.textContent = '🌙';
+    }
+    try { localStorage.setItem('novanails_theme', theme); } catch(e){}
+  }
+
+  var savedTheme = null;
+  try { savedTheme = localStorage.getItem('novanails_theme'); } catch(e){}
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+
+  themeToggle.addEventListener('click', function() {
+    var cur = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    setTheme(cur === 'dark' ? 'light' : 'dark');
+    showToast('Theme switched to ' + (cur === 'dark' ? 'Light Pop' : 'Dark Glow'));
+  });
+
+  // 2. Mobile Drawer Toggle
+  var mobileBtn = document.getElementById('mobileMenuBtn');
+  var mobileDrawer = document.getElementById('mobileDrawer');
+  mobileBtn.addEventListener('click', function() {
+    var open = mobileDrawer.classList.toggle('open');
+    mobileBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  document.querySelectorAll('.mob-link').forEach(function(link) {
+    link.addEventListener('click', function() {
+      mobileDrawer.classList.remove('open');
+      mobileBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // 3. Staggered Word Entrance on Hero Headline
+  var headline = document.getElementById('heroHeadline');
+  if (headline) {
+    var nodes = Array.prototype.slice.call(headline.childNodes);
+    var delayCount = 0;
+    nodes.forEach(function(node) {
+      if (node.nodeType === 3) {
+        var words = node.textContent.split(/(\s+)/);
+        var frag = document.createDocumentFragment();
+        words.forEach(function(w) {
+          if (!w.trim()) {
+            frag.appendChild(document.createTextNode(' '));
+            return;
+          }
+          var span = document.createElement('span');
+          span.className = 'word';
+          span.style.animationDelay = (delayCount * 110) + 'ms';
+          span.textContent = w;
+          frag.appendChild(span);
+          delayCount++;
+        });
+        headline.replaceChild(frag, node);
+      } else if (node.nodeType === 1) {
+        node.classList.add('word');
+        node.style.animationDelay = (delayCount * 110) + 'ms';
+        delayCount++;
+      }
+    });
+  }
+
+  // 4. HELPER FUNCTION TO SETUP 10% - 80% - 10% PEEK CAROUSEL
+  function setupPeekCarousel(config) {
+    var viewport = config.viewport;
+    var track = config.track;
+    var getSlides = config.getSlides;
+    var prevBtn = config.prevBtn;
+    var nextBtn = config.nextBtn;
+    var autoToggle = config.autoToggle;
+    var autoIndicator = config.autoIndicator;
+    var autoText = config.autoText;
+    var onUpdate = config.onUpdate || function(){};
+    var intervalTime = config.intervalTime || 4400;
+
+    var currentIndex = 0;
+    var isAutoPlaying = true;
+    var timer = null;
+
+    function getVisibleSlides() {
+      return Array.prototype.slice.call(getSlides()).filter(function(s) {
+        return s.style.display !== 'none';
+      });
+    }
+
+    function update() {
+      var visible = getVisibleSlides();
+      if (!visible.length) return;
+      if (currentIndex < 0) currentIndex = visible.length - 1;
+      if (currentIndex >= visible.length) currentIndex = 0;
+
+      var viewportWidth = viewport.clientWidth;
+      var slideWidth = viewportWidth * 0.8;
+      var peekMargin = viewportWidth * 0.1;
+
+      visible.forEach(function(slide, idx) {
+        slide.style.width = slideWidth + 'px';
+        slide.style.flex = '0 0 ' + slideWidth + 'px';
+        if (idx === currentIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      var targetTranslateX = peekMargin - (currentIndex * slideWidth);
+      track.style.transform = 'translateX(' + targetTranslateX + 'px)';
+
+      onUpdate(currentIndex, visible.length, visible);
+    }
+
+    function startAuto() {
+      stopAuto();
+      timer = setInterval(function() {
+        var visible = getVisibleSlides();
+        if (visible.length <= 1) return;
+        currentIndex = (currentIndex + 1) % visible.length;
+        update();
+      }, intervalTime);
+      if (autoIndicator) autoIndicator.style.background = '#22c55e';
+      if (autoText) autoText.textContent = 'Auto-Moving (Active)';
+    }
+
+    function stopAuto() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+      if (autoIndicator) autoIndicator.style.background = '#ef4444';
+      if (autoText) autoText.textContent = 'Paused (Click to Resume)';
+    }
+
+    function resetAuto() {
+      if (isAutoPlaying) startAuto();
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function() {
+        var visible = getVisibleSlides();
+        currentIndex = (currentIndex - 1 + visible.length) % visible.length;
+        update();
+        resetAuto();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function() {
+        var visible = getVisibleSlides();
+        currentIndex = (currentIndex + 1) % visible.length;
+        update();
+        resetAuto();
+      });
+    }
+
+    viewport.addEventListener('mouseenter', function() {
+      if (isAutoPlaying) stopAuto();
+    });
+
+    viewport.addEventListener('mouseleave', function() {
+      if (isAutoPlaying) startAuto();
+    });
+
+    if (autoToggle) {
+      autoToggle.addEventListener('click', function() {
+        isAutoPlaying = !isAutoPlaying;
+        if (isAutoPlaying) {
+          startAuto();
+          showToast('▶ Auto-move resumed!');
+        } else {
+          stopAuto();
+          showToast('⏸ Auto-move paused!');
+        }
+      });
+    }
+
+    // Touch Swipe for mobile
+    var touchStartX = 0;
+    var touchEndX = 0;
+    viewport.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    viewport.addEventListener('touchend', function(e) {
+      touchEndX = e.changedTouches[0].screenX;
+      var visible = getVisibleSlides();
+      if (touchStartX - touchEndX > 45) {
+        currentIndex = (currentIndex + 1) % visible.length;
+        update();
+        resetAuto();
+      } else if (touchEndX - touchStartX > 45) {
+        currentIndex = (currentIndex - 1 + visible.length) % visible.length;
+        update();
+        resetAuto();
+      }
+    }, { passive: true });
+
+    window.addEventListener('resize', update);
+    update();
+    startAuto();
+
+    return {
+      goTo: function(idx) {
+        currentIndex = idx;
+        update();
+        resetAuto();
+      },
+      refresh: function() {
+        currentIndex = 0;
+        update();
+        resetAuto();
+      }
+    };
+  }
+
+  // 5. INITIALIZE JOURNEY CAROUSEL
+  var journeyStepsNav = document.querySelectorAll('.journey-step-btn');
+  var journeyCarousel = setupPeekCarousel({
+    viewport: document.getElementById('journeyViewport'),
+    track: document.getElementById('journeyTrack'),
+    getSlides: function() { return document.querySelectorAll('.journey-slide-card'); },
+    prevBtn: document.getElementById('journeyPrevBtn'),
+    nextBtn: document.getElementById('journeyNextBtn'),
+    autoToggle: document.getElementById('autoplayToggle'),
+    autoIndicator: document.getElementById('autoIndicator'),
+    autoText: document.getElementById('autoText'),
+    intervalTime: 4200,
+    onUpdate: function(idx) {
+      journeyStepsNav.forEach(function(btn, i) {
+        if (i === idx) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+    }
+  });
+
+  // Journey slide click & step buttons
+  document.querySelectorAll('.journey-slide-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var idx = parseInt(card.getAttribute('data-index'), 10);
+      journeyCarousel.goTo(idx);
+    });
+  });
+
+  journeyStepsNav.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var idx = parseInt(btn.getAttribute('data-slide'), 10);
+      journeyCarousel.goTo(idx);
+    });
+  });
+
+  // 6. INITIALIZE NAIL STUDIO / GALLERY CAROUSEL
+  var galleryCounter = document.getElementById('galleryCounter');
+  var gallerySlides = document.querySelectorAll('.gallery-slide-card');
+
+  var galleryCarousel = setupPeekCarousel({
+    viewport: document.getElementById('galleryViewport'),
+    track: document.getElementById('galleryTrack'),
+    getSlides: function() { return document.querySelectorAll('.gallery-slide-card'); },
+    prevBtn: document.getElementById('galleryPrevBtn'),
+    nextBtn: document.getElementById('galleryNextBtn'),
+    autoToggle: document.getElementById('galleryAutoplayToggle'),
+    autoIndicator: document.getElementById('galleryAutoIndicator'),
+    autoText: document.getElementById('galleryAutoText'),
+    intervalTime: 4500,
+    onUpdate: function(idx, total) {
+      if (galleryCounter) {
+        var num = (idx + 1) < 10 ? '0' + (idx + 1) : (idx + 1);
+        var tot = total < 10 ? '0' + total : total;
+        galleryCounter.textContent = num + ' / ' + tot;
+      }
+    }
+  });
+
+  // Gallery slide click to center
+  gallerySlides.forEach(function(card) {
+    card.addEventListener('click', function(e) {
+      if (e.target.closest('button') || e.target.closest('a')) return;
+      var visible = Array.prototype.slice.call(gallerySlides).filter(function(s) {
+        return s.style.display !== 'none';
+      });
+      var vIdx = visible.indexOf(card);
+      if (vIdx !== -1) {
+        galleryCarousel.goTo(vIdx);
+      }
+    });
+  });
+
+  // Gallery Category Filter
+  var filterButtons = document.querySelectorAll('.gallery-filter-controls .filter-btn');
+  filterButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filterButtons.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.getAttribute('data-filter');
+
+      gallerySlides.forEach(function(slide) {
+        var cats = slide.getAttribute('data-category') || '';
+        if (filter === 'all' || cats.indexOf(filter) !== -1) {
+          slide.style.display = 'block';
+        } else {
+          slide.style.display = 'none';
+        }
+      });
+
+      galleryCarousel.refresh();
+      showToast('Filtered: ' + btn.textContent);
+    });
+  });
+
+  // 7. Scroll Reveals (IntersectionObserver)
+  var revealElements = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealElements.forEach(function(el) { observer.observe(el); });
+  } else {
+    revealElements.forEach(function(el) { el.classList.add('in'); });
+  }
+
+  // 8. Interactive 3D Tilt on Hero Stage
+  var tiltStage = document.getElementById('heroTiltStage');
+  if (tiltStage && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    tiltStage.addEventListener('mousemove', function(e) {
+      var rect = tiltStage.getBoundingClientRect();
+      var x = e.clientX - rect.left - rect.width / 2;
+      var y = e.clientY - rect.top - rect.height / 2;
+      var rotX = -(y / rect.height) * 12;
+      var rotY = (x / rect.width) * 12;
+      tiltStage.style.transform = 'perspective(900px) rotateX(' + rotX.toFixed(2) + 'deg) rotateY(' + rotY.toFixed(2) + 'deg)';
+    });
+
+    tiltStage.addEventListener('mouseleave', function() {
+      tiltStage.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg)';
+      tiltStage.style.transition = 'transform 0.4s ease';
+    });
+
+    tiltStage.addEventListener('mouseenter', function() {
+      tiltStage.style.transition = 'none';
+    });
+  }
+
+  // 9. Custom Sparkle Cursor on Desktop
+  var cursor = document.getElementById('cursorSparkle');
+  if (cursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    window.addEventListener('mousemove', function(e) {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    document.querySelectorAll('a, button, .gallery-slide-card, .journey-slide-card, .filter-btn').forEach(function(interactiveEl) {
+      interactiveEl.addEventListener('mouseenter', function() {
+        cursor.style.transform = 'translate(-50%, -50%) scale(2.2)';
+        cursor.style.background = 'var(--lemon)';
+      });
+      interactiveEl.addEventListener('mouseleave', function() {
+        cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+        cursor.style.background = 'var(--pink)';
+      });
+    });
+  }
+
+  // 10. Global Modals and Helpers
+  window.closeAllModals = function() {
+    document.querySelectorAll('.modal-overlay').forEach(function(m) {
+      m.classList.remove('active');
+    });
+  };
+
+  window.openNailModal = function(title, shape, desc, imgSrc) {
+    document.getElementById('modalNailTitle').textContent = title;
+    document.getElementById('modalNailShape').textContent = shape;
+    document.getElementById('modalNailDesc').textContent = desc;
+    var container = document.getElementById('modalNailImgContainer');
+    if (imgSrc) {
+      container.innerHTML = '<img src="' + imgSrc + '" alt="' + title + '" style="width:100%; height:220px; object-fit:cover;">';
+      container.style.display = 'block';
+    } else {
+      container.style.display = 'none';
+    }
+    document.getElementById('nailModal').classList.add('active');
+  };
+
+  document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        window.closeAllModals();
+      }
+    });
+  });
+
+  window.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      window.closeAllModals();
+    }
+  });
+
+  window.copyInstagram = function() {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText('@nova_nails_26').then(function() {
+        showToast('📋 Copied @nova_nails_26! Open Instagram & send us a DM!');
+      });
+    } else {
+      showToast('📸 Follow us on Instagram: @nova_nails_26');
+    }
+  };
+
+  var toastTimer = null;
+  window.showToast = function(msg) {
+    var toast = document.getElementById('toastMsg');
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function() {
+      toast.classList.remove('show');
+    }, 3800);
+  };
+
+})();
+</script>
+</body>
+</html>
